@@ -1,0 +1,40 @@
+/* Footer Container */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #5f3e98;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  z-index: 10; /* Ensure it stays above background elements */
+}
+
+/* Footer Links Styling */
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.footer-links a:hover {
+  color: #d1a6e6;
+}
+
+/* Footer Text */
+.footer p {
+  font-size: 14px;
+}
+
+/* Ensure the body height allows the footer to appear properly */
+body, html {
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+  padding-bottom: 60px; /* Height of the footer */
+  box-sizing: border-box;
+}

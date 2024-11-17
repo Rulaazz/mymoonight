@@ -1,0 +1,153 @@
+/* .menu-container will remain the same */
+.menu-container {
+  display: flex;
+  justify-content: flex-start; /* Aligns the menu to the left */
+  align-items: flex-start;
+  position: absolute;
+  z-index: 999;
+}
+
+.menu-icon {
+  font-size: 40px;
+  cursor: pointer;
+  margin: 0;
+margin-top: 20px;
+margin-left: 5px;
+}
+
+/* Side menu changes to open from the left */
+.side-menu {
+  position: fixed;
+  left: -600px; /* Initially off-screen to the left */
+  top: 0;
+  width: 500px;
+  height: 100vh;
+  background-color: white;
+  border-right: 1px solid #ccc; /* Border is now on the right */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Shadow is now on the right */
+  padding: 20px;
+  z-index: 1100;
+  transition: transform 0.3s ease; /* Transition for the slide-in */
+}
+
+.side-menu.open {
+  transform: translateX(600px); /* Moves the menu into view from the left */
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 35px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.menu-options {
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.5;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.theIcons {
+  margin-right: 5px;
+}
+
+.firstLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.secondLink {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.menu-options li {
+  margin: 10px 0;
+  cursor: pointer;
+  align-items: center;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1050;
+  transition: opacity 0.3s ease;
+  opacity: 0.75;
+  position: fixed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .menu-icon {
+    font-size: 30px;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  .side-menu {
+    width: 60vw;
+  }
+
+  .side-menu.open {
+    transform: translateX(600px); /* Same effect on smaller screens */
+  }
+
+  .close-button {
+    font-size: 30px;
+  }
+
+  .menu-options {
+    font-size: 1.2rem;
+  }
+}
+.title-img-menu1 {
+  width: 50%; /* Adjust to your preferred width */
+  border-radius: 50%;
+}
+
+.title-image1 {
+  width: 50%; 
+  text-align:center;
+}
+
+/* Title image adjustments */
+.title-img-menu {
+ width: 10%; 
+  border-radius: 50%;
+
+}
+
+
+
+/* Cart Section Styling */
+.menu-cart {
+  margin: 20px 0;
+  text-align:end;
+  margin-top: -100px;
+}
+
+.cart-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.cart-count {
+  display: inline-block;
+  background-color: #ff5722;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  
+}

@@ -1,0 +1,93 @@
+/* Container Styling */
+.admin-dashboard {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.admin-dashboard h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #007bff;
+}
+
+/* Button Styling */
+.admin-dashboard button {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.admin-dashboard button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.admin-dashboard button:active {
+  transform: scale(0.98);
+}
+
+.admin-dashboard button:nth-child(2) {
+  background-color: #28a745;
+}
+
+.admin-dashboard button:nth-child(2):hover {
+  background-color: #218838;
+}
+
+.admin-dashboard button:nth-child(3) {
+  background-color: #dc3545;
+}
+
+.admin-dashboard button:nth-child(3):hover {
+  background-color: #c82333;
+}
+
+/* Alert/Notification Section */
+.admin-dashboard .alert-section {
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-dashboard {
+    padding: 15px;
+  }
+
+  .admin-dashboard h2 {
+    font-size: 20px;
+  }
+
+  .admin-dashboard button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .admin-dashboard .alert-section {
+    font-size: 13px;
+  }
+}

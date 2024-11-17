@@ -1,0 +1,146 @@
+/* Cart Page Styles */
+.cart-page {
+  padding: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cart-item:hover {
+  transform: scale(1.05);
+}
+
+/* Product Image Styling */
+.cart-item-image {
+  flex: 1;
+  position: relative;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+
+/* Product Name Styling */
+.cart-item-details {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.product-name h3 {
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.product-name h3:hover {
+  color: #5f3e98; /* Purple */
+  text-decoration: underline;
+}
+
+/* Buttons and Remove Button */
+.cart-item-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.remove-btn {
+  padding: 8px 12px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.remove-btn:hover {
+  background-color: darkred;
+}
+
+/* Cart Item Details Hover Effect */
+.cart-item:hover .product-image {
+  opacity: 0.8;
+}
+
+.cart-item:hover .product-name h3 {
+  color: #5f3e98; /* Purple on hover */
+}
+
+.cart-summary {
+  margin-top: 20px;
+}
+
+.checkout-btn {
+  background-color: #5f3e98;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: #4a1a8f;
+}
+
+/* Error message for empty cart */
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Empty Cart */
+.empty-cart {
+  text-align: center;
+}
+
+.back-to-products-btn {
+  color: #5f3e98;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-to-products-btn:hover {
+  text-decoration: underline;
+}
+
+/* Checkout Form */
+.checkout-form {
+  margin-top: 20px;
+}
+
+.checkout-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.checkout-form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.confirm-btn {
+  background-color: #5f3e98;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background-color: #4a1a8f;
+}
