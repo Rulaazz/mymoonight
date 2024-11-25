@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { UserProvider } from './components/UserContext';
 import { CartProvider } from './components/CartContext/CartContext';
-import HomePage from './pages/HomePage';
+import HomePage from './pages/HomePage/HomePage';
 import CartPage from './pages/CartPage/CartPage';
 import ProductDetailPage from './components/ProductDetailPage/ProductDetailPage';
 import LoginPage from './pages/Login/Login'; // Import LoginPage

@@ -17,8 +17,8 @@
   color: #007bff;
 }
 
-/* Button Styling */
-.admin-dashboard button {
+/* Specific Button Styles */
+.add-product-btn {
   display: block;
   width: 100%;
   max-width: 200px;
@@ -34,29 +34,63 @@
   transition: background-color 0.3s, transform 0.2s;
 }
 
-.admin-dashboard button:hover {
+.add-product-btn:hover {
   background-color: #0056b3;
   transform: scale(1.05);
 }
 
-.admin-dashboard button:active {
+.add-product-btn:active {
   transform: scale(0.98);
 }
 
-.admin-dashboard button:nth-child(2) {
+.edit-product-btn {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
   background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.admin-dashboard button:nth-child(2):hover {
+.edit-product-btn:hover {
   background-color: #218838;
+  transform: scale(1.05);
 }
 
-.admin-dashboard button:nth-child(3) {
+.edit-product-btn:active {
+  transform: scale(0.98);
+}
+
+.delete-product-btn {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
   background-color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.admin-dashboard button:nth-child(3):hover {
+.delete-product-btn:hover {
   background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.delete-product-btn:active {
+  transform: scale(0.98);
 }
 
 /* Alert/Notification Section */
@@ -82,12 +116,14 @@
     font-size: 20px;
   }
 
-  .admin-dashboard button {
+  .add-product-btn,
+  .edit-product-btn,
+  .delete-product-btn {
     font-size: 14px;
     padding: 8px 12px;
   }
 
-  .admin-dashboard .alert-section {
+  .alert-section {
     font-size: 13px;
   }
 }

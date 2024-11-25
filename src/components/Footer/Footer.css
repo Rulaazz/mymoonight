@@ -10,11 +10,6 @@
   z-index: 10; /* Ensure it stays above background elements */
 }
 
-/* Footer Links Styling */
-.footer-links {
-  margin-bottom: 10px;
-}
-
 .footer-links a {
   color: #fff;
   text-decoration: none;
@@ -30,11 +25,3 @@
   font-size: 14px;
 }
 
-/* Ensure the body height allows the footer to appear properly */
-body, html {
-  min-height: 100vh;
-  margin: 0;
-  position: relative;
-  padding-bottom: 60px; /* Height of the footer */
-  box-sizing: border-box;
-}
